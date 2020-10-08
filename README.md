@@ -11,8 +11,8 @@ The Jack Project stores any infomation in a text file on your local drive and in
 
  - Extendable List Items
  - Easy to use navigation
- -- Menus
- -- Applications
+ - Menus
+ - Applications
  - Clean code and memory reduction
  - Automatically fixes any issues installing the application
  - Included troubleshooter
