@@ -1,6 +1,6 @@
-package Objects;
+package com.jayjaytee.jackproject.objects;
 
-public class MenuItem {
+public abstract class MenuItem {
     private final String displayName;
     private final String displayDescription;
     private final String commandUsage;
@@ -21,5 +21,5 @@ public class MenuItem {
         return this.commandUsage;
     }
 
-    public void execute(){ this.execute(); }
+    public abstract void execute();
 }

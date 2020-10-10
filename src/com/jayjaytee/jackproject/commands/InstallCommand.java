@@ -1,15 +1,15 @@
-package Commands;
+package com.jayjaytee.jackproject.commands;
 
-import Managers.CommandManager;
-import Managers.FileManager;
-import Objects.MenuItem;
+import com.jayjaytee.jackproject.managers.CommandManager;
+import com.jayjaytee.jackproject.managers.FileManager;
+import com.jayjaytee.jackproject.objects.MenuItem;
 
-import java.io.File;
-
-public class installCommand extends MenuItem {
+public class InstallCommand extends MenuItem {
     public static boolean isInstalled = false;
 
-    public installCommand(){ super("Install", "Creates an environment so you can use this application correctly.", "install"); }
+    public InstallCommand() {
+        super("Install", "Creates an environment so you can use this application correctly.", "install");
+    }
 
     @Override
     public void execute() {
