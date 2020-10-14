@@ -15,7 +15,7 @@ public class FileManager {
         try{
             File logFile = new File(logFileLocation);
             if(logFile.createNewFile()){ System.out.println("Successfully created the logs file."); }
-            else { System.out.println("The logs file already exists. (skipping)"); }
+            else { System.out.println("The logs file already exists. (skipping) (Error: dtb10"); }
         }catch(IOException e){
             System.out.println("An error occurred whilst creating the logs file.");
         }

@@ -15,15 +15,21 @@ public class installCommand extends MenuItem {
     public void execute() {
         FileManager fileManager = new FileManager();
         CommandManager commandManager = new CommandManager();
+
+        if(isInstalled) {
+            System.out.println("You've already installed the project! If this is incorrect type 'installoverride'.");
+            commandManager.printMenuItems();
+        }
+
         System.out.println("Installing...");
 
         System.out.println("Attempting to create the logs file...");
         fileManager.createLogFile();
 
         System.out.println("Writing to the logs file...");
-        fileManager.log(fileManager.logFileLocation, "The install command was ran!", 0);
+        fileManager.log(fileManager.logFileLocation, "First installation was ran", 0);
 
-        System.out.println("That's all folks!");
+
 
         commandManager.printMenuItems();
     }
