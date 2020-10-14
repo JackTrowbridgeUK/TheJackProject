@@ -1,6 +1,7 @@
 package com.jayjaytee.jackproject.managers;
 
 import com.jayjaytee.jackproject.commands.InstallCommand;
+import com.jayjaytee.jackproject.commands.hidden.InstallOverrideCommand;
 import com.jayjaytee.jackproject.objects.MenuItem;
 
 import java.util.ArrayList;
@@ -13,6 +14,7 @@ public class CommandManager {
     // Must be initialized before print
     public void registerMenuItems(){
         menuItems.add(new InstallCommand());
+        menuItems.add(new InstallOverrideCommand());
     }
 
 
@@ -27,7 +29,7 @@ public class CommandManager {
         System.out.println(" ");
         System.out.println(" ----------------- ");
         System.out.println(" ");
-        for(MenuItem item : menuItems){ System.out.println(item.getDisplayName() + " -> " + item.getDisplayDescription()); }
+        for(MenuItem item : menuItems){ if(item.getDisplayCommand()){ System.out.println(item.getDisplayName() + " -> " + item.getDisplayDescription()); } }
         System.out.println(" ");
         System.out.println(" --- Type here ---");
         String output = outputUserInput();
