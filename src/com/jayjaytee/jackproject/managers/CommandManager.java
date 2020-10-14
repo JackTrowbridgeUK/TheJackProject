@@ -1,7 +1,7 @@
-package Managers;
+package com.jayjaytee.jackproject.managers;
 
-import Commands.installCommand;
-import Objects.MenuItem;
+import com.jayjaytee.jackproject.commands.InstallCommand;
+import com.jayjaytee.jackproject.objects.MenuItem;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -12,7 +12,7 @@ public class CommandManager {
 
     // Must be initialized before print
     public void registerMenuItems(){
-        menuItems.add(new installCommand());
+        menuItems.add(new InstallCommand());
     }
 
 

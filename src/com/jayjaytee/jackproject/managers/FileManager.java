@@ -1,6 +1,6 @@
-package Managers;
+package com.jayjaytee.jackproject.managers;
 
-import Utils.FileUtils;
+import com.jayjaytee.jackproject.utils.FileUtils;
 
 import java.io.BufferedWriter;
 import java.io.File;
