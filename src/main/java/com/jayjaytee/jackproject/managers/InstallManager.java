@@ -7,6 +7,9 @@ public class InstallManager {
 
         System.out.println("Installing...");
 
+        System.out.println("Attempting to create the program files directory...");
+        fileManager.createProgramFolder();
+
         System.out.println("Attempting to create the logs file...");
         fileManager.createLogFile();
 

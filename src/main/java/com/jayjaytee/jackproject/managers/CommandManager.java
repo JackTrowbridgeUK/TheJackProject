@@ -9,14 +9,13 @@ import java.util.Scanner;
 
 public class CommandManager {
 
-    private ArrayList<MenuItem> menuItems = new ArrayList<>();
+    public ArrayList<MenuItem> menuItems = new ArrayList<>();
 
     // Must be initialized before print
     public void registerMenuItems(){
         menuItems.add(new InstallCommand());
         menuItems.add(new InstallOverrideCommand());
     }
-
 
     // Returns user input
     public String outputUserInput(){
